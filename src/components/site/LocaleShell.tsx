@@ -15,6 +15,7 @@ import {
   Typography,
 } from "@mui/material";
 import { usePathname } from "next/navigation";
+import FloatingContactButton from "@/src/components/site/FloatingContactButton";
 import type { Locale } from "@/src/config/locales";
 import { supportedLocales } from "@/src/config/locales";
 import { getSiteData } from "@/src/content/site-content";
@@ -192,6 +193,8 @@ export default function LocaleShell({ locale, children }: LocaleShellProps) {
       <Box component="main" sx={{ flex: 1, pb: 1 }}>
         {children}
       </Box>
+
+      <FloatingContactButton locale={locale} />
 
       <Box
         component="footer"

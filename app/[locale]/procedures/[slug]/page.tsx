@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Box, Card, CardContent, Container, Grid, List, ListItem, ListItemText, Stack, Typography } from "@mui/material";
+import FadeInOnView from "@/src/components/ui/FadeInOnView";
 import { isSupportedLocale, supportedLocales, type Locale } from "@/src/config/locales";
 import { getSiteData } from "@/src/content/site-content";
 
@@ -88,37 +89,40 @@ export default async function ProcedureDetailsPage({ params }: PageProps) {
   return (
     <Container maxWidth="lg" sx={{ py: { xs: 3, md: 6 } }}>
       <Stack spacing={3.5}>
-        <Box
-          sx={{
-            borderRadius: 4,
-            overflow: "hidden",
-            boxShadow: "0 18px 40px rgba(13,110,253,0.17)",
-            position: "relative",
-          }}
-        >
-          <Box
-            component="img"
-            src={procedure.heroImage}
-            alt={`${procedure.title} hero placeholder`}
-            sx={{ width: "100%", height: { xs: 240, md: 360 }, objectFit: "cover" }}
-          />
+        <FadeInOnView>
           <Box
             sx={{
-              position: "absolute",
-              inset: 0,
-              background: "linear-gradient(0deg, rgba(8,24,45,.6) 0%, rgba(8,24,45,.2) 50%, rgba(8,24,45,0) 100%)",
+              borderRadius: 4,
+              overflow: "hidden",
+              boxShadow: "0 18px 40px rgba(13,110,253,0.17)",
+              position: "relative",
             }}
-          />
-          <Box sx={{ position: "absolute", left: { xs: 16, md: 30 }, bottom: { xs: 14, md: 24 }, color: "#fff" }}>
-            <Typography variant="overline" sx={{ letterSpacing: 1 }}>
-              {procedure.category}
-            </Typography>
-            <Typography variant="h2" sx={{ fontSize: { xs: "1.8rem", md: "2.6rem" } }}>
-              {procedure.title}
-            </Typography>
+          >
+            <Box
+              component="img"
+              src={procedure.heroImage}
+              alt={`${procedure.title} hero placeholder`}
+              sx={{ width: "100%", height: { xs: 240, md: 360 }, objectFit: "cover" }}
+            />
+            <Box
+              sx={{
+                position: "absolute",
+                inset: 0,
+                background: "linear-gradient(0deg, rgba(8,24,45,.6) 0%, rgba(8,24,45,.2) 50%, rgba(8,24,45,0) 100%)",
+              }}
+            />
+            <Box sx={{ position: "absolute", left: { xs: 16, md: 30 }, bottom: { xs: 14, md: 24 }, color: "#fff" }}>
+              <Typography variant="overline" sx={{ letterSpacing: 1 }}>
+                {procedure.category}
+              </Typography>
+              <Typography variant="h2" sx={{ fontSize: { xs: "1.8rem", md: "2.6rem" } }}>
+                {procedure.title}
+              </Typography>
+            </Box>
           </Box>
-        </Box>
+        </FadeInOnView>
 
+        <FadeInOnView delayMs={60}>
         <Box>
           <Typography variant="overline" color="primary">
             {procedure.category}
@@ -128,7 +132,9 @@ export default async function ProcedureDetailsPage({ params }: PageProps) {
             {procedure.intro}
           </Typography>
         </Box>
+        </FadeInOnView>
 
+        <FadeInOnView delayMs={120}>
         <Grid container spacing={2.2}>
           <Grid size={{ xs: 12, md: 8 }}>
             <Card sx={{ borderRadius: 3 }}>
@@ -160,7 +166,9 @@ export default async function ProcedureDetailsPage({ params }: PageProps) {
             </Card>
           </Grid>
         </Grid>
+        </FadeInOnView>
 
+        <FadeInOnView delayMs={160}>
         <Card sx={{ borderRadius: 3 }}>
           <CardContent>
             <Typography variant="h6">{labels.included}</Typography>
@@ -173,7 +181,9 @@ export default async function ProcedureDetailsPage({ params }: PageProps) {
             </List>
           </CardContent>
         </Card>
+        </FadeInOnView>
 
+        <FadeInOnView delayMs={200}>
         <Card sx={{ borderRadius: 3 }}>
           <CardContent>
             <Typography variant="h6" sx={{ mb: 2 }}>
@@ -207,42 +217,45 @@ export default async function ProcedureDetailsPage({ params }: PageProps) {
             </Grid>
           </CardContent>
         </Card>
+        </FadeInOnView>
 
-        <Card
-          sx={{
-            borderRadius: 3,
-            background:
-              "linear-gradient(135deg, rgba(13,110,253,.1) 0%, rgba(0,168,150,.08) 100%)",
-          }}
-        >
-          <CardContent>
-            <Typography variant="h6" sx={{ mb: 2 }}>
-              {labels.beforeAfter}
-            </Typography>
-            <Grid container spacing={2}>
-              <Grid size={{ xs: 12, md: 6 }}>
-                <Box sx={{ overflow: "hidden", borderRadius: 2.5 }}>
-                  <Box
-                    component="img"
-                    src={procedure.beforeAfter.before}
-                    alt={`${procedure.title} before`}
-                    sx={{ width: "100%", height: { xs: 220, md: 260 }, objectFit: "cover" }}
-                  />
-                </Box>
+        <FadeInOnView delayMs={240}>
+          <Card
+            sx={{
+              borderRadius: 3,
+              background:
+                "linear-gradient(135deg, rgba(13,110,253,.1) 0%, rgba(0,168,150,.08) 100%)",
+            }}
+          >
+            <CardContent>
+              <Typography variant="h6" sx={{ mb: 2 }}>
+                {labels.beforeAfter}
+              </Typography>
+              <Grid container spacing={2}>
+                <Grid size={{ xs: 12, md: 6 }}>
+                  <Box sx={{ overflow: "hidden", borderRadius: 2.5 }}>
+                    <Box
+                      component="img"
+                      src={procedure.beforeAfter.before}
+                      alt={`${procedure.title} before`}
+                      sx={{ width: "100%", height: { xs: 220, md: 260 }, objectFit: "cover" }}
+                    />
+                  </Box>
+                </Grid>
+                <Grid size={{ xs: 12, md: 6 }}>
+                  <Box sx={{ overflow: "hidden", borderRadius: 2.5 }}>
+                    <Box
+                      component="img"
+                      src={procedure.beforeAfter.after}
+                      alt={`${procedure.title} after`}
+                      sx={{ width: "100%", height: { xs: 220, md: 260 }, objectFit: "cover" }}
+                    />
+                  </Box>
+                </Grid>
               </Grid>
-              <Grid size={{ xs: 12, md: 6 }}>
-                <Box sx={{ overflow: "hidden", borderRadius: 2.5 }}>
-                  <Box
-                    component="img"
-                    src={procedure.beforeAfter.after}
-                    alt={`${procedure.title} after`}
-                    sx={{ width: "100%", height: { xs: 220, md: 260 }, objectFit: "cover" }}
-                  />
-                </Box>
-              </Grid>
-            </Grid>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        </FadeInOnView>
       </Stack>
     </Container>
   );
