@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img">
+<defs>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="40"/></filter>
+<linearGradient id="bga" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ef476f"/><stop offset="100%" stop-color="#ff9db5"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#bga)"/>
+<g filter="url(#soft)" opacity=".45">
+  <circle cx="1008" cy="128" r="240" fill="#ffffff"/>
+  <circle cx="144" cy="736" r="208" fill="#ffffff" opacity=".6"/>
+</g><g>
+  <ellipse cx="600" cy="54" rx="54" ry="60" fill="rgba(255,255,255,.92)"/>
+  <rect x="578" y="90" width="44" height="40" fill="rgba(255,255,255,.92)"/>
+  <path d="M480 110
+    C450 210 504 270 504 320
+    C400 400 400 510 482 590
+    L502 690 Q504 716 532 716
+    L572 716 Q584 716 584 690
+    L584 540 L616 540 L616 690
+    Q616 716 628 716
+    L668 716 Q696 716 698 690
+    L718 590
+    C800 510 800 400 696 320
+    C696 270 750 210 720 110 Z"
+    fill="rgba(255,255,255,.92)"/>
+</g>
+</svg>

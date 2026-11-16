@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img">
+<defs>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="40"/></filter>
+<linearGradient id="bga" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5e60ce"/><stop offset="100%" stop-color="#9fa4ff"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#bga)"/>
+<g filter="url(#soft)" opacity=".45">
+  <circle cx="1008" cy="128" r="240" fill="#ffffff"/>
+  <circle cx="144" cy="736" r="208" fill="#ffffff" opacity=".6"/>
+</g><g>
+  <path d="M489.6 631.6 C489.6 521.2 710.4 521.2 710.4 631.6 Z" fill="rgba(255,255,255,.5)"/>
+  <ellipse cx="600" cy="420" rx="138" ry="171.12" fill="#e8c4a4"/>
+  <ellipse cx="462" cy="443.92" rx="20.240000000000002" ry="29.44" fill="#e8c4a4"/>
+  <ellipse cx="738" cy="443.92" rx="20.240000000000002" ry="29.44" fill="#e8c4a4"/>
+  <path d="M445.44 383.2 C438.08 226.79999999999998 544.8 171.6 600 173.44 C657.04 171.6 761.9200000000001 228.64 754.56 383.2 C728.8 291.2 471.2 291.2 445.44 383.2 Z" fill="#2f2a44"/>
+  <ellipse cx="548.48" cy="431.04" rx="11.96" ry="8.280000000000001" fill="#3b3353"/>
+  <ellipse cx="651.52" cy="431.04" rx="11.96" ry="8.280000000000001" fill="#3b3353"/>
+  <path d="M559.52 508.32 Q600 541.44 640.48 508.32" stroke="#b9705f" stroke-width="8.280000000000001" fill="none" stroke-linecap="round"/>
+</g>
+</svg>

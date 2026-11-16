@@ -1,1 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5e60ce"/><stop offset="100%" stop-color="#9fa4ff"/></linearGradient></defs><rect width="1200" height="800" fill="url(#g)" rx="36"/><circle cx="1030" cy="140" r="180" fill="none" stroke="rgba(255,255,255,.4)"/><text x="600" y="390" text-anchor="middle" fill="#fff" font-family="Arial" font-size="64" font-weight="700">Hair Hero</text><text x="600" y="450" text-anchor="middle" fill="rgba(255,255,255,.9)" font-family="Arial" font-size="28">Placeholder Image</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img">
+<defs>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="40"/></filter>
+<linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5e60ce"/><stop offset="100%" stop-color="#9fa4ff"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#hero)"/>
+<g filter="url(#soft)" opacity=".45">
+  <circle cx="1008" cy="128" r="240" fill="#ffffff"/>
+  <circle cx="144" cy="736" r="208" fill="#ffffff" opacity=".6"/>
+</g>
+<g opacity=".22" stroke="#ffffff" stroke-width="2" fill="none">
+  <circle cx="1032" cy="160" r="176"/>
+  <circle cx="1032" cy="160" r="256"/>
+</g>
+<g><g><circle cx="192" cy="272" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M192 272 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="258" cy="272" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M258 272 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="324" cy="272" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M324 272 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="390" cy="272" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M390 272 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="456" cy="272" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M456 272 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="522.0000000000001" cy="272" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M522.0000000000001 272 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="588" cy="272" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M588 272 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="654" cy="272" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M654 272 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="720" cy="272" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M720 272 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="786" cy="272" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M786 272 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="852.0000000000001" cy="272" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M852.0000000000001 272 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="918" cy="272" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M918 272 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="984.0000000000001" cy="272" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M984.0000000000001 272 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="192" cy="384.00000000000006" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M192 384.00000000000006 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="258" cy="384.00000000000006" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M258 384.00000000000006 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="324" cy="384.00000000000006" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M324 384.00000000000006 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="390" cy="384.00000000000006" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M390 384.00000000000006 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="456" cy="384.00000000000006" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M456 384.00000000000006 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="522.0000000000001" cy="384.00000000000006" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M522.0000000000001 384.00000000000006 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="588" cy="384.00000000000006" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M588 384.00000000000006 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="654" cy="384.00000000000006" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M654 384.00000000000006 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="720" cy="384.00000000000006" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M720 384.00000000000006 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="786" cy="384.00000000000006" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M786 384.00000000000006 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="852.0000000000001" cy="384.00000000000006" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M852.0000000000001 384.00000000000006 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="918" cy="384.00000000000006" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M918 384.00000000000006 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+  <g><circle cx="984.0000000000001" cy="384.00000000000006" r="17.599999999999998" fill="rgba(255,255,255,.85)"/><path d="M984.0000000000001 384.00000000000006 q24 -72 8 -112.00000000000001" stroke="rgba(255,255,255,.7)" stroke-width="6" fill="none" stroke-linecap="round"/></g></g>
+
+</svg>

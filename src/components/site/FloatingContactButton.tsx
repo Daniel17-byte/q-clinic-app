@@ -11,7 +11,7 @@ type FloatingContactButtonProps = {
 
 const labelsByLocale: Record<Locale, { call: string; whatsapp: string }> = {
   ro: {
-    call: "Suna acum",
+    call: "Sună acum",
     whatsapp: "WhatsApp",
   },
   en: {

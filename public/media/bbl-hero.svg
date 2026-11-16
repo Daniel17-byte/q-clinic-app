@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ef476f"/><stop offset="100%" stop-color="#ff9db5"/></linearGradient></defs><rect width="1200" height="800" fill="url(#g)" rx="36"/><circle cx="1030" cy="140" r="180" fill="none" stroke="rgba(255,255,255,.4)"/><text x="600" y="390" text-anchor="middle" fill="#fff" font-family="Arial" font-size="64" font-weight="700">BBL Hero</text><text x="600" y="450" text-anchor="middle" fill="rgba(255,255,255,.9)" font-family="Arial" font-size="28">Placeholder Image</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img">
+<defs>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="40"/></filter>
+<linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ef476f"/><stop offset="100%" stop-color="#ff9db5"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#hero)"/>
+<g filter="url(#soft)" opacity=".45">
+  <circle cx="1008" cy="128" r="240" fill="#ffffff"/>
+  <circle cx="144" cy="736" r="208" fill="#ffffff" opacity=".6"/>
+</g>
+<g opacity=".22" stroke="#ffffff" stroke-width="2" fill="none">
+  <circle cx="1032" cy="160" r="176"/>
+  <circle cx="1032" cy="160" r="256"/>
+</g>
+<g fill="none" stroke="rgba(255,255,255,.8)" stroke-width="14" stroke-linecap="round">
+  <path d="M312 592 C240 368 456 240 540 176"/>
+  <path d="M672.0000000000001 176 C792 272 936 400 864 592"/>
+  <path d="M432 640 C552 496 672.0000000000001 496 768 640"/>
+</g>
+
+</svg>

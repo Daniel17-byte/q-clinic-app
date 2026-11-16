@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img">
+<defs>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="40"/></filter>
+<linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d6efd"/><stop offset="100%" stop-color="#7bb0ff"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#hero)"/>
+<g filter="url(#soft)" opacity=".45">
+  <circle cx="1008" cy="128" r="240" fill="#ffffff"/>
+  <circle cx="144" cy="736" r="208" fill="#ffffff" opacity=".6"/>
+</g>
+<g opacity=".22" stroke="#ffffff" stroke-width="2" fill="none">
+  <circle cx="1032" cy="160" r="176"/>
+  <circle cx="1032" cy="160" r="256"/>
+</g>
+<g><g>
+    <circle cx="360" cy="320" r="60" fill="rgba(255,255,255,.85)"/>
+    <path d="M256 624 C256 400 464 400 464 624 Z" fill="rgba(255,255,255,.7)"/>
+  </g>
+<g>
+    <circle cx="600" cy="336.00000000000006" r="60" fill="rgba(255,255,255,.85)"/>
+    <path d="M496 624 C496 400 704 400 704 624 Z" fill="rgba(255,255,255,.7)"/>
+  </g>
+<g>
+    <circle cx="840" cy="320" r="60" fill="rgba(255,255,255,.85)"/>
+    <path d="M736 624 C736 400 944 400 944 624 Z" fill="rgba(255,255,255,.7)"/>
+  </g></g>
+
+</svg>

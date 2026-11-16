@@ -48,6 +48,16 @@ export default function LocaleShell({ locale, children }: LocaleShellProps) {
     return href === `/${locale}` ? pathname === href : pathname.startsWith(href);
   };
 
+  // Keep the visitor on the same page when switching language.
+  const localeHref = (target: Locale) => {
+    if (!pathname) {
+      return `/${target}`;
+    }
+
+    const [, , ...rest] = pathname.split("/");
+    return `/${[target, ...rest].join("/")}`;
+  };
+
   return (
     <Box
       sx={{
@@ -123,7 +133,7 @@ export default function LocaleShell({ locale, children }: LocaleShellProps) {
               {supportedLocales.map((item) => (
                 <Button
                   key={item}
-                  href={`/${item}`}
+                  href={localeHref(item)}
                   size="small"
                   variant={item === locale ? "contained" : "text"}
                   sx={{ minWidth: 44, borderRadius: 999 }}
@@ -182,7 +192,13 @@ export default function LocaleShell({ locale, children }: LocaleShellProps) {
 
           <Stack direction="row" spacing={1} sx={{ mt: 1 }}>
             {supportedLocales.map((item) => (
-              <Button key={item} href={`/${item}`} size="small" variant={item === locale ? "contained" : "outlined"}>
+              <Button
+                key={item}
+                href={localeHref(item)}
+                size="small"
+                variant={item === locale ? "contained" : "outlined"}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
                 {item.toUpperCase()}
               </Button>
             ))}
